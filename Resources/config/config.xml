@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Snowflakes</title>
+        <title lang="de-DE">Schneeflocken</title>
+        <name>Snowflakes</name>
+        <!--Configuration for snowflakes go here-->
+        <input-field type="int">
+            <name>snowflakeCount</name>
+            <required>true</required>
+            <defaultValue>100</defaultValue>
+            <label>Number of snowflakes</label>
+            <label lang="de-DE">Anzahl der Schneeflocken</label>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>snowflakeColor</name>
+            <required>true</required>
+            <defaultValue>#5ecdef</defaultValue>
+            <label>Snowflake color</label>
+            <label lang="de-DE">Schneeflocken Farbe</label>
+        </input-field>
+
+        <input-field type="int">
+            <name>snowflakeSpeed</name>
+            <required>true</required>
+            <defaultValue>10</defaultValue>
+            <label>Speed of the snowflakes</label>
+            <label lang="de-DE">Geschwindigkeit der Schneeflocken</label>
+            <helpText>Should be between 1 and 100</helpText>
+            <helpText lang="de-DE">Sollte zwischen 1 und 100 liegen</helpText>
+        </input-field>
+
+        <input-field type="int">
+            <name>snowflakeMinSize</name>
+            <required>true</required>
+            <defaultValue>8</defaultValue>
+            <label>Minimal size of the snowflakes</label>
+            <label lang="de-DE">Minimale Größe der Schneeflocken</label>
+            <helpText>Should be between 1 and 100</helpText>
+            <helpText lang="de-DE">Sollte zwischen 1 und 100 liegen</helpText>
+        </input-field>
+
+        <input-field type="int">
+            <name>snowflakeMaxSize</name>
+            <required>true</required>
+            <defaultValue>18</defaultValue>
+            <label>Maximal size of the snowflakes</label>
+            <label lang="de-DE">Maximale Größe der Schneeflocken</label>
+            <helpText>Should be between 1 and 100</helpText>
+            <helpText lang="de-DE">Sollte zwischen 1 und 100 liegen</helpText>
+        </input-field>
+
+        <input-field type="bool">
+            <name>snowflakeRotation</name>
+            <required>true</required>
+            <defaultValue>true</defaultValue>
+            <label>Rotate snowflakes</label>
+            <label lang="de-DE">Rotation der Schneeflocken</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>snowflakeWind</name>
+            <required>true</required>
+            <defaultValue>true</defaultValue>
+            <label>Simulate Wind</label>
+            <label lang="de-DE">Wind simulieren</label>
+        </input-field>
+
+        <input-field type="float">
+            <name>snowflakeMinOpacity</name>
+            <required>true</required>
+            <defaultValue>0.6</defaultValue>
+            <label>Minimal opacity of the snowflakes</label>
+            <label lang="de-DE">Minimale Transparenz der Schneeflocken</label>
+            <helpText>Should be between 0.1 and 1</helpText>
+            <helpText lang="de-DE">Sollte zwischen 0.1 und 1 liegen</helpText>
+        </input-field>
+
+        <input-field type="float">
+            <name>snowflakeMaxOpacity</name>
+            <required>true</required>
+            <defaultValue>1</defaultValue>
+            <label>Maximal opacity of the snowflakes</label>
+            <label lang="de-DE">Maximale Transparenz der Schneeflocken</label>
+            <helpText>Should be between 0.1 and 1</helpText>
+            <helpText lang="de-DE">Sollte zwischen 0.1 und 1 liegen</helpText>
+        </input-field>
+    </card>
+</config>
