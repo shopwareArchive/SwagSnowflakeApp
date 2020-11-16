@@ -1,21 +1,23 @@
 {% sw_extends '@Storefront/storefront/base.html.twig' %}
 
 {% block base_body_script %}
-    <script>
-        {% sw_include '@Snowflakes/storefront/snowflake.js.twig' %}
-    </script>
-    <script>
-        var sf = new Snowflakes({
-            count: {{ shopware.config.Snowflakes.config.snowflakeCount }},
-            color: '{{ shopware.config.Snowflakes.config.snowflakeColor }}',
-            speed: {{ shopware.config.Snowflakes.config.snowflakeSpeed / 10.0 }},
-            minSize: {{ shopware.config.Snowflakes.config.snowflakeMinSize }},
-            maxSize: {{ shopware.config.Snowflakes.config.snowflakeMaxSize }},
-            minOpacity: {{ shopware.config.Snowflakes.config.snowflakeMinOpacity }},
-            maxOpacity: {{ shopware.config.Snowflakes.config.snowflakeMaxOpacity }},
-            rotation: {{ shopware.config.Snowflakes.config.snowflakeRotation ? 'true' : 'false' }},
-            wind: {{ shopware.config.Snowflakes.config.snowflakeWind ? 'true' : 'false' }}
-        });
-    </script>
+    {% if shopware.config.Snowflakes.config.snowflakeActive %}
+        <script>
+            {% sw_include '@Snowflakes/storefront/snowflake.js.twig' %}
+        </script>
+        <script>
+            var sf = new Snowflakes({
+                count: {{ shopware.config.Snowflakes.config.snowflakeCount }},
+                color: '{{ shopware.config.Snowflakes.config.snowflakeColor }}',
+                speed: {{ shopware.config.Snowflakes.config.snowflakeSpeed / 10.0 }},
+                minSize: {{ shopware.config.Snowflakes.config.snowflakeMinSize }},
+                maxSize: {{ shopware.config.Snowflakes.config.snowflakeMaxSize }},
+                minOpacity: {{ shopware.config.Snowflakes.config.snowflakeMinOpacity }},
+                maxOpacity: {{ shopware.config.Snowflakes.config.snowflakeMaxOpacity }},
+                rotation: {{ shopware.config.Snowflakes.config.snowflakeRotation ? 'true' : 'false' }},
+                wind: {{ shopware.config.Snowflakes.config.snowflakeWind ? 'true' : 'false' }}
+            });
+        </script>
+    {% endif %}
     {{ parent() }}
 {% endblock %}

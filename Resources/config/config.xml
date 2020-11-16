@@ -7,6 +7,14 @@
         <title lang="de-DE">Schneeflocken</title>
         <name>Snowflakes</name>
         <!--Configuration for snowflakes go here-->
+        <input-field type="bool">
+            <name>snowflakeActive</name>
+            <required>true</required>
+            <defaultValue>true</defaultValue>
+            <label>Show snowflakes</label>
+            <label lang="de-DE">Schneeflocken anzeigen</label>
+        </input-field>
+
         <input-field type="int">
             <name>snowflakeCount</name>
             <required>true</required>
