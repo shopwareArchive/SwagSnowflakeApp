@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/app-system/0.1.0/src/Core/Content/App/Manifest/Schema/manifest-1.0.xsd">
+<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/app-system/0.2.0/src/Core/Content/App/Manifest/Schema/manifest-1.0.xsd">
     <meta>
-        <name>Snowflakes</name>
+        <name>SwagSnowflake</name>
         <label>Snowflakes</label>
         <label lang="de-DE">Schneeflocken</label>
         <description>Get your shop ready for christmas with the snowflake app</description>
         <description lang="de-DE">Bereite deinen Shop auf die Weihnachtszeit vor mit der Schneeflocken App</description>
         <author>shopware AG</author>
         <copyright>(c) by shopware AG</copyright>
-        <version>0.0.1</version>
-        <icon>snowflake.png</icon>
-        <license></license>
+        <version>1.0.0</version>
+        <icon>icon.png</icon>
+        <license>MIT</license>
     </meta>
-
 </manifest>
-<!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
